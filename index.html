@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Introdução ao JavaScript</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que é o JavaScript?</h2>
+            <p>É uma linguagem de programação muito utilizada para criar aplicações interativas e sistemas de software.</p>
+
+            <p>Ele é responsável por:</p>
+            <ul>
+                <li>Responder a cliques</li>
+                <li>Validar formulários</li>
+                <li>Atualizar conteúdos</li>
+                <li>Buscar dados de APIs</li>
+                <li>Controlar o comportamento da aplicação</li>
+            </ul>
+
+            <p><b>IMPORTANTE:</b> JavaScript não é Java. Apesar da semelhança nos nomes, são linguagens totalmente diferentes, com características e escossistemas próprios.</p>
+
+            <p><b>Curiosidade:</b> Foi criado em apenas 10 dias.</p>
+
+            <h3>O que dá pra fazer com JS?</h3>
+            <ul>
+                <li>Frontend:
+                    <ul>
+                        <li>Criar interfaces interativas</li>
+                        <li>Menus</li>
+                        <li>Validações</li>
+                        <li>Filtros</li>
+                        <li>Animações</li>
+                        <li>Dashboard</li>
+                        <li>Aplicações com React, Vue, Angular, Astro e etc.</li>
+                    </ul>
+                </li>
+
+                <li>Backend:
+                    <ul>
+                        <li>Nodejs</li>
+                        <li>Criar APIs REST</li>
+                        <li>Autenticação</li>
+                        <li>Processar requisições</li>
+                        <li>Integrar com serviços e com banco de dados</li>
+                    </ul>
+                </li>
+
+                <li>Mobile/Desktop:
+                    <ul>
+                        <li>Criar aplicativos</li>
+                        <li>React Native e Electron</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Como aplicar o JS</h2>
+            <p>O JavaScript segue três abordagens. Sendo elas:</p>
+            <ul>
+                <li>Inline</li>
+                <li>Interno</li>
+                <li>Externo</li>
+            </ul>
+
+            <h3>Abordagem Inline</h3>
+            <p>Nessa abordagem, o JavaScript é escrito diretamente no atributo de um elemento HTML. Exemplo:</p>
+
+            <button type="button" onclick="alert('Olá, mundo!')">Clique aqui e veja a mensagem</button>
+            <hr>
+
+            <h3>Abordagem Interna</h3>
+            <p>Nessa abordagem, o JavaScript é escrito dentro da tag <pre> <code>&lt;script&gt;</code> </pre>, no próprio arquivo HTML.</p>
+
+            <button id="botao">Clique aqui para mudar o fundo do site</button>
+            <hr>
+
+            <h3>Abordagem Externa</h3>
+            <p>Nessa abordagem, o JavaScript fica em um arquivo separado, geralmente com uma extensão .js, conectado ao HTML por meio de uma tag de script configurado com o atributo src. Exemplo:</p>
+        </section>
+    </main>
+
+    <!-- script interno -->
+    <script>
+        const botao = document.querySelector("#botao")
+
+        botao.addEventListener("click", function(){
+            document.body.style.backgroundColor = "brown"
+            alert("Você trocou a cor de fundo do site!")
+        })
+    </script>
+
+    <!-- Arquivo externo -->
+    <script src="ola-mundo.js"></script>
+</body>
+</html>
