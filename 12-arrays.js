@@ -96,6 +96,8 @@ console.log(reprovados);
 // Manipulando arrays
 const animais = ["Cachorro", "Pássaro", "Gato"]
 
+console.log(animais);
+
 console.log("--- push() ---");
 // Insere um elemento no final do array
 animais.push("Cavalo");
@@ -104,4 +106,61 @@ console.log("--- unshift() ---");
 // Insere um elemento no início do array
 animais.unshift("Girafa");
 
-console.log(animais);
+console.log("--- pop() ---");
+// Remove o último elemento da lista
+animais.pop();
+
+console.log("--- shift() ---");
+// Remove o primeiro elemento
+animais.shift();
+
+
+// Tipos de dados que um array suporta
+const dados = [
+    "Isabel",
+    18,
+    true,
+    null,
+    undefined,
+    {cidade: "SP"},
+    [1,2,3,["Brasil"]],
+    function(){
+        console.log("Olá");
+    }
+]
+
+dados[7]();
+console.log(dados[1]);
+console.log(dados[6][3][0]);
+
+
+// Exemplo prático
+const students = [
+    {
+        nome: "Josefa",
+        idade: 20,
+        linguagens: ["HTML", "CSS", "JavaScript"],
+        ativo: true
+    },
+    {
+        nome: "Joana",
+        idade: 18,
+        linguagens: ["Python", "Java"],
+        ativo: true
+    },
+    {
+        nome: "Carlos",
+        idade: 22,
+        linguagens: ["PHP", "JavaScript", "HTML"],
+        ativo: false
+    }
+]
+
+// Para um estudante da lista de estudantes, faça...
+for(let student of students){
+    console.log("---- Alun@ ----")
+    console.log(student.nome);
+    console.log(student.idade);
+    console.log(student.linguagens);
+    console.log(student.ativo);
+}
